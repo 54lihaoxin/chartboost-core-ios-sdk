@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |spec|
   spec.name             = 'HLCoreSDK'
-  spec.version          = '0.0.1'
+  spec.version          = '0.0.2'
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
-  spec.homepage         = 'https://github.com/ChartBoost/chartboost-core-ios-sdk'
+  spec.homepage         = 'https://github.com/54lihaoxin/chartboost-core-ios-sdk'
   spec.author           = { 'Haoxin Li' => '54lihaoxin@gmail.com' }
   spec.summary          = 'A folk of Chartboost Core iOS SDK.'    
   spec.description      = 'SDK that provides core functionalities to publishers and other modules.'
@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/54lihaoxin/chartboost-core-ios-sdk.git', :tag => spec.version }
   spec.source_files = 'Source/**/*.{swift}'
   spec.static_framework = true
+  spec.vendored_frameworks = 'HLCoreSDK.xcframework'
 
   # Minimum supported versions
   spec.swift_version         = '5.0'
